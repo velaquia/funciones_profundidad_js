@@ -55,6 +55,24 @@ const data = [
 --> texto
 
 */
+function Post(titulo, avatar, texto) {
+  this.titulo = titulo;
+  this.avatar = avatar;
+  this.texto = texto;
+};
+
+let posts = [];
+for(const datos of data) {
+  posts.push(new Post(
+    datos.titulo,
+    datos.avatar,
+    datos.texto
+    )
+  );
+}
+console.log(posts);
+
+
 
 
 
